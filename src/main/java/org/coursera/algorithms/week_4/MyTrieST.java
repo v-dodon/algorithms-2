@@ -74,11 +74,10 @@ public class MyTrieST<Value> {
     }
 
     /**
-     * Returns all of the keys in the set that start with {@code prefix}.
+     * Checks if there is any keys with the given prefix
      *
      * @param prefix the prefix
-     * @return all of the keys in the set that start with {@code prefix},
-     * as an iterable
+     * @return true if there is at least one key with the given prefix
      */
     public boolean isAnyKeyWithPrefix(String prefix) {
         Node x = get(root, prefix, 0);
